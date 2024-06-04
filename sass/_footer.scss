@@ -1,0 +1,38 @@
+.footer {
+  grid-column: full-start / full-end;
+
+  background-color: $color-secondary;
+  padding: 8rem;
+
+  .nav {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    list-style: none;
+
+    &__link {
+      &:link,
+      &:visited {
+        display: block;
+
+        font-size: 1.4rem;
+        color: #fff;
+        text-decoration: none;
+        font-family: $font-display;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 1.5rem;
+
+        transition: all 0.2s;
+      }
+      &:hover,
+      &:active {
+        background-color: rgba(255, 255, 255, 0.05);
+        transform: translateY(-3px);
+      }
+    }
+  }
+}
